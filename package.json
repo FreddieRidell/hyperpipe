@@ -1,6 +1,6 @@
 {
 	"name": "@freddieridell/hyperpipe",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"public": true,
 	"description": "uses hyperswarm to share stdin and stdout between two peers",
 	"main": "index.js",
