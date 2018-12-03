@@ -1,44 +1,51 @@
 {
-  "name": "@freddieridell/hyperpipe",
-  "version": "0.0.1",
-  "description": "uses hyperswarm to share a unix pipe between two peers",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src --out-dir lib",
-    "format": "prettier --write src/**/*",
-    "watch": "babel src --out-dir lib --watch"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^10.0.1",
-    "babel-preset-freddie-ridell": "0.0.8",
-    "eslint": "^5.9.0",
-    "eslint-config-react-app": "^3.0.5",
-    "eslint-plugin-flowtype": "^3.2.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1",
-    "prettier": "^1.15.3"
-  },
-  "babel": {
-    "presets": [
-      "freddie-ridell"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "files": [
-    "/index.js",
-    "/lib",
-    "/main.js"
-  ],
-  "prettier": {
-    "tabWidth": 4,
-    "trailingComma": "all",
-    "useTabs": true
-  }
+	"name": "@freddieridell/hyperpipe",
+	"version": "0.0.1",
+	"public": true,
+	"description": "uses hyperswarm to share a unix pipe between two peers",
+	"main": "index.js",
+	"bin": {
+		"hyperpipe": "./main.js"
+	},
+	"scripts": {
+		"build": "babel src --out-dir lib",
+		"format": "prettier --write src/**/*",
+		"watch": "babel src --out-dir lib --watch"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-eslint": "^10.0.1",
+		"babel-preset-freddie-ridell": "0.0.8",
+		"eslint": "^5.9.0",
+		"eslint-config-react-app": "^3.0.5",
+		"eslint-plugin-flowtype": "^3.2.0",
+		"eslint-plugin-import": "^2.14.0",
+		"eslint-plugin-jsx-a11y": "^6.1.2",
+		"eslint-plugin-react": "^7.11.1",
+		"prettier": "^1.15.3"
+	},
+	"babel": {
+		"presets": [
+			"freddie-ridell"
+		]
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"files": [
+		"/index.js",
+		"/lib",
+		"/main.js"
+	],
+	"prettier": {
+		"tabWidth": 4,
+		"trailingComma": "all",
+		"useTabs": true
+	},
+	"dependencies": {
+		"@hyperswarm/network": "0.0.4",
+		"hypercore-crypto": "^1.0.0"
+	}
 }
