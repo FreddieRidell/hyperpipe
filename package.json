@@ -2,8 +2,19 @@
 	"name": "@freddieridell/hyperpipe",
 	"version": "0.0.1",
 	"public": true,
-	"description": "uses hyperswarm to share a unix pipe between two peers",
+	"description": "uses hyperswarm to share stdin and stdout between two peers",
 	"main": "index.js",
+	"homepage": "https://github.com/CodogoFreddie/hyperpipe",
+	"bugs": "https://github.com/CodogoFreddie/hyperpipe",
+	"keywords": [
+		"hyperswarm",
+		"hyperpipe",
+		"hyper",
+		"dht",
+		"stdin",
+		"stdout",
+		"distributed"
+	],
 	"bin": {
 		"hyperpipe": "./main.js"
 	},
@@ -45,7 +56,6 @@
 		"useTabs": true
 	},
 	"dependencies": {
-		"@hyperswarm/network": "0.0.4",
-		"hypercore-crypto": "^1.0.0"
+		"@hyperswarm/network": "0.0.4"
 	}
 }
